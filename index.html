@@ -25,7 +25,7 @@
     </style>
   </head>
   <body class="font-style">
-    <header class="w-full bg-slate-300 fixed">
+    <header class="w-full bg-slate-300 fixed  z-50">
       <!--nav start-->
       <div class="w-4/5 mx-auto flex justify-between items-center py-3 px-3">
         <div class="flex item-center">
@@ -36,10 +36,10 @@
           </button>
         </div>
         <!--Navbar center-->
-        <div class="flex items-center">
+        <div class="flex items-center ">
           <img src="./assets/logo.png" alt="logo" class="lg:w-8 h-8 mr-3" />
           <span
-            class="lg:font-semibold text-[#111111] text-2xl md:font-semibold text-[#111111] text-2xl sm:font-normal"
+            class="lg:font-semibold text-[#111111] text-2xl  sm:font-normal"
             >Donate Bangladesh</span
           >
         </div>
@@ -58,13 +58,13 @@
       <section class="button-section">
         <div class="w-4/5 mx-auto">
           <div class="flex justify-center space-x-9">
-            <button class="btn bg-[#B4F461]">Donation</button>
-            <button class="btn">History</button>
+            <button id="show-donation-section" class="w-32 h-10 rounded-md text-black font-bold bg-[#B4F461]">Donation</button>
+            <button id="show-history-section" class="w-32 h-10 rounded-md text-black font-bold">History</button>
           </div>
         </div>
       </section>
 
-      <section class="feature-section pt-6">
+      <section id="donate-section" class="feature-section pt-6">
         <div class="w-4/5 mx-auto space-y-3">
 
           <!--Donation card one start-->
@@ -198,19 +198,27 @@
             </div>
           </div>
           <!--Donation card three end-->
+        </div>
 
-          <!--FAQ Start-->
+      </section>
 
-          <!--FAQ End-->
+      <!--History section Start-->
+      <section id="transition-section" class="history section pt-10 pb-10">
+         
+        <div  class="w-4/5 mx-auto">
+          <h2 class="font-bold text-center ">History Section</h2>
         </div>
       </section>
+      
+         <!--History section End-->
     </main>
 
-    <footer></footer>
+    
 
     <script src="./js/utilities.js"></script>
     <script src="./js/addMoney.js"></script>
     <script src="./js/donatefeni.js"></script>
     <script src="./js/donatequota.js"></script>
+    <script src="./js/features.js"></script>
   </body>
 </html>
