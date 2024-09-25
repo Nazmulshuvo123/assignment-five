@@ -112,7 +112,8 @@
                     />
                   </div>
                   <div>
-                    <button onclick="showModal()"
+                    <button
+                      onclick="my_modal_5.showModal()"
                       class="btn btn-wide w-full bg-[#B4F461]"
                       id="add-money-btn1"
                     >
@@ -161,7 +162,7 @@
                     />
                   </div>
                   <div>
-                    <button
+                    <button  onclick="my_modal_5.showModal()"
                       class="btn btn-wide w-full bg-[#B4F461]"
                       id="add-money-btn2"
                     >
@@ -213,7 +214,7 @@
                     />
                   </div>
                   <div>
-                    <button
+                    <button  onclick="my_modal_5.showModal()"
                       class="btn btn-wide w-full bg-[#B4F461]"
                       id="add-money-btn3"
                     >
@@ -248,22 +249,24 @@
 
       <!--History section End-->
 
-      <!--Model start-->
+      <!--Modal start-->
+
       <!-- Open the modal using ID.showModal() method -->
       <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
-          <h3 class="text-lg font-bold">Hello!</h3>
-          <p class="py-4">Press ESC key or click the button below to close</p>
-          <div class="modal-action">
-            <form method="dialog">
+          <h3 class="text-3xl font-bold text-center text-black pb-6">Congrates..!</h3>
+         <img class="h-10 w-10 text-center ml-52" src="./assets/coin.png" alt="">
+          <p class="text-center font-semibold pt-4">You Have Donate For Human Kind</p>
+          <p class="text-center text-black text-2xl font-bold pt-3 pb-3">Successfully</p>
+          <div class="modal-action flex justify-center">
+            <form  method="dialog">
               <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
+              <button class="btn bg-slate-300" >Close Conformation</button>
             </form>
           </div>
         </div>
       </dialog>
-
-      <!--Model End-->
+      <!--Modal End-->
     </main>
 
     <script src="./js/utilities.js"></script>
