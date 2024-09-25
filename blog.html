@@ -1,37 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-  </head>
-  <body>
-    <div class="collapse bg-base-200">
-      <input type="radio" name="my-accordion-1" checked="checked" />
-      <div class="collapse-title text-xl font-medium">
-        Click to open this one and close others
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Field</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-style {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+</head>
+<body class="font-style">
+  <header class="w-full bg-slate-300 fixed z-50">
+    <div class="w-4/5 mx-auto grid grid-cols-3 items-center py-3 px-3">
+      <div class="flex item-center">
+        <button onclick="goHomePage()"
+          class="btn bg-[#B4F461] border-none text-xl font-semibold text-black sm:mr-3"
+        >
+          Home
+        </button>
       </div>
-      <div class="collapse-content">
-        <p>hello</p>
+      <!--Navbar center-->
+      <div class="flex items-center">
+        <img src="./assets/logo.png" alt="logo" class="lg:w-8 h-8 mr-3" />
+        <span class="lg:font-semibold text-[#111111] text-2xl sm:font-normal"
+          >Donate Bangladesh</span
+        >
+      </div>
+      <!--Money for donation-->
+      <div>
+        <div class="flex items-center pl-56 gap-3">
+          <img src="./assets/coin.png" alt="" />
+          <p class="flex items-center font-medium text-[#111111B3] text-xl">
+            <span id="amount-for-donate"></span>BDT
+          </p>
+        </div>
       </div>
     </div>
-    <div class="collapse bg-base-200">
-      <input type="radio" name="my-accordion-1" />
-      <div class="collapse-title text-xl font-medium">
-        Click to open this one and close others
+   
+  </header>
+
+  <main class="pt-40">
+    <div class="w-4/5 mx-auto">
+      <h1 class="text-black font-bold text-3xl pb-7">Important Faq ..?</h1>
+
+      
+  
+        <div class="collapse collapse-arrow bg-base-200 mb-4">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-2xl text-black font-bold"> What is document object model (DOM)?</div>
+          <div class="collapse-content">
+            <p class="text-gray-400 text-sm font-semibold">The Document Object Model (DOM) is a programming interface that represents an HTML document as a tree structure. It allows JavaScript to access and manipulate the structure, style, and content of the document. This enables dynamic web pages with interactive elements.</p>
+          </div>
+        </div>
+      
+
+      <div class="collapse collapse-arrow bg-base-200 mb-4">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl text-black font-bold">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-gray-400 text-xl font-semibold">To select an element from the DOM, use the getElementById() method. This method takes the element's ID as input and returns the element object.</p>
+        </div>
       </div>
-      <div class="collapse-content">
-        <p>hello</p>
+
+      <div class="collapse collapse-arrow bg-base-200 mb-4">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl text-black font-semibold">What is event delegation in the context of the DOM, and why it is useful?</div>
+        <div class="collapse-content">
+          <p class="text-gray-400 text-xl font-semibold">Event delegation in the DOM is a technique where a single event handler is attached to a parent element, and it listens for events that bubble up from its children. This is useful because it reduces the number of event handlers needed, improving performance and making code more maintainable.</p>
+        </div>
       </div>
+
+      <div class="collapse collapse-arrow bg-base-200 mb-4">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl text-black font-semibold">What is event delegation in the context of the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-gray-400 text-xl font-semibold">Event delegation is a technique in JavaScript where you attach an event listener to a parent element instead of directly to each child element. This allows you to handle events for multiple child elements efficiently, especially when the number of child elements is dynamic or large.</p>
+        </div>
+      </div>
+
     </div>
-    <div class="collapse bg-base-200">
-      <input type="radio" name="my-accordion-1" />
-      <div class="collapse-title text-xl font-medium">
-        Click to open this one and close others
-      </div>
-      <div class="collapse-content">
-        <p>hello</p>
-      </div>
-    </div>
-  </body>
+    
+  </main>
+  <script src="./js/utilities.js"></script>
+</body>
 </html>

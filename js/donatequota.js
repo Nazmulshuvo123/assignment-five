@@ -21,8 +21,7 @@ document
       const div = document.createElement('div');
       div.classList.add('shadow-md','border','rounded-md');
       div.innerHTML = `
-        <h4 class="text-2xl font-semibold  text-green-400 pt-3 pb-2">Donate money for Quota</h4>
-        <p class="pb-3  text-orange-500">Donation : ${addDonateMoney} TK. Balance: ${newBalance}</p>
+       <p class="pb-4 pt-6 text-left text-2xl pl-5 font-semibold text-orange-500">${addDonateMoney} Taka is Donated for Quota Protest, Bangladesh.</p>
         `
         document.getElementById('transition-container').appendChild(div);
 

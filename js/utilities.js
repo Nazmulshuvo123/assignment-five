@@ -11,11 +11,11 @@
       return currentAmount; 
   }
  
-  //common function
-//   function showSectionById(){
-//       document.getElementById('donate-section').classList.add('hidden');
-//       document.getElementById('transition- history').classList.add('hidden', 'bg-[#B4F461]');
+ function goHomePage(){
+  window.open('index.html', "_self");
+ }
+ function goBlogPage(){
+  window.open('blog.html', "_self");
+ }
+  
 
-//       document.getElementById(id).classList.remove('hidden');
-      
-//   }
