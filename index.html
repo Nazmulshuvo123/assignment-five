@@ -29,7 +29,8 @@
       <!--nav start-->
       <div class="w-4/5 mx-auto grid grid-cols-3 items-center py-3 px-3">
         <div class="flex item-center">
-          <button onclick="goBlogPage()"
+          <button
+            onclick="goBlogPage()"
             class="btn bg-[#B4F461] border-none text-xl font-semibold text-black sm:mr-3"
           >
             Blog
@@ -111,7 +112,7 @@
                     />
                   </div>
                   <div>
-                    <button
+                    <button onclick="showModal()"
                       class="btn btn-wide w-full bg-[#B4F461]"
                       id="add-money-btn1"
                     >
@@ -247,6 +248,22 @@
 
       <!--History section End-->
 
+      <!--Model start-->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Hello!</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+      <!--Model End-->
     </main>
 
     <script src="./js/utilities.js"></script>

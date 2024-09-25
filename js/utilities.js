@@ -17,5 +17,8 @@
  function goBlogPage(){
   window.open('blog.html', "_self");
  }
+
+ function showModal(){
   
+ }
 

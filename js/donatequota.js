@@ -1,6 +1,7 @@
 document
   .getElementById("add-money-btn3")
   .addEventListener("click", function () {
+    const date = new Date();
     const addDonateMoney = getDonateInputValueById("add-money-for-quota");
     console.log("Donate money for Quota:", addDonateMoney);
 
@@ -21,7 +22,8 @@ document
       const div = document.createElement('div');
       div.classList.add('shadow-md','border','rounded-md');
       div.innerHTML = `
-       <p class="pb-4 pt-6 text-left text-2xl pl-5 font-semibold text-orange-500">${addDonateMoney} Taka is Donated for Quota Protest, Bangladesh.</p>
+       <p class="pb-4 pt-6 text-left text-2xl pl-5 font-semibold text-blue-500">${addDonateMoney} Taka is Donated for Quota Protest, Bangladesh.</p>
+       <p class= "pb-3 text-left text-xl pl-5 font-semibold text-slate-400">${date}</p>
         `
         document.getElementById('transition-container').appendChild(div);
 
